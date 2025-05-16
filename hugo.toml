@@ -1,0 +1,58 @@
+baseURL = "/" # Siteniz yayınlandığında buraya Cloudflare'ın vereceği adresi veya kendi alan adınızı yazacaksınız. Şimdilik / kalabilir.
+languageCode = "tr-TR"
+title = "Benim Harika Yeni Sitem"
+theme = ["github.com/luizdepra/hugo-coder"] # Bu satır Hugo'ya Coder temasını internetten çekmesini söyler (Hugo Modülü olarak)
+
+paginate = 5 # Bir sayfada kaç yazı görüneceği
+
+# Ana menü ayarları
+[menu]
+  [[menu.main]]
+    identifier = "anasayfa"
+    name = "Anasayfa"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/" # Yazılarınızı /content/posts/ altına koyacaksınız
+    weight = 2
+  [[menu.main]]
+    identifier = "hakkimda"
+    name = "Hakkımda"
+    url = "/about/" # /content/about.md dosyasını oluşturacağız
+    weight = 3
+  # İsterseniz daha fazla menü öğesi ekleyebilirsiniz
+
+# Tema için temel parametreler (Hugo Coder temasına özel)
+[params]
+  author = "Adınız Soyadınız" # Kendi adınızı yazın
+  info = "Kendinizle ilgili kısa bir tanıtım veya mesleğiniz" # Kendinizi tanıtın
+  description = "Bu benim Hugo Coder temasıyla oluşturduğum kişisel web sitem." # Sitenizin genel açıklaması
+  keywords = "blog, kişisel, teknoloji, yazılım, hugo" # Sitenizle ilgili anahtar kelimeler
+
+  # Avatar (profil resmi) - İsteğe bağlı. Eğer kullanacaksanız static/images/avatar.jpg gibi bir yola resmi yüklemelisiniz.
+  # avatarURL = "/images/avatar.jpg" 
+
+  # Renk şeması: "auto", "light", "dark" olabilir
+  colorScheme = "auto"
+
+  hideColorSchemeToggle = false # Renk şeması değiştirme butonunu göster/gizle
+
+  # Sosyal medya ikonları - İsteğe bağlı
+  # [[params.social]]
+  #   name = "Github"
+  #   icon = "fa fa-github fa-2x" # Font Awesome ikon sınıfları
+  #   weight = 1
+  #   url = "https://github.com/kullaniciadiniz/"
+  # [[params.social]]
+  #   name = "Twitter"
+  #   icon = "fa fa-twitter fa-2x"
+  #   weight = 2
+  #   url = "https://twitter.com/kullaniciadiniz/"
+
+# Kod blokları için syntax highlighting
+[markup.highlight]
+  noClasses = false
+  #guessSyntax = true # Otomatik dil tahmini
+  #lineNos = true # Satır numaralarını göster
