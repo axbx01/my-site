@@ -1,7 +1,7 @@
 baseURL = "/" # Siteniz yayınlandığında buraya Cloudflare'ın vereceği adresi veya kendi alan adınızı yazacaksınız. Şimdilik / kalabilir.
 languageCode = "tr-TR"
 title = "Benim Harika Yeni Sitem"
-theme = ["github.com/luizdepra/hugo-coder"] # Bu satır Hugo'ya Coder temasını internetten çekmesini söyler (Hugo Modülü olarak)
+theme = "hugo-coder" # Bu satır Hugo'ya Coder temasını internetten çekmesini söyler (Hugo Modülü olarak)
 
 # Ana menü ayarları
 [menu]
