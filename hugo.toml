@@ -3,8 +3,6 @@ languageCode = "tr-TR"
 title = "Benim Harika Yeni Sitem"
 theme = ["github.com/luizdepra/hugo-coder"] # Bu satır Hugo'ya Coder temasını internetten çekmesini söyler (Hugo Modülü olarak)
 
-paginate = 5 # Bir sayfada kaç yazı görüneceği
-
 # Ana menü ayarları
 [menu]
   [[menu.main]]
@@ -56,3 +54,6 @@ paginate = 5 # Bir sayfada kaç yazı görüneceği
   noClasses = false
   #guessSyntax = true # Otomatik dil tahmini
   #lineNos = true # Satır numaralarını göster
+
+[pagination]
+  pagerSize = 5
